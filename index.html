@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Component Lab</title>
+
+  <!-- jQuery (for small effects) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Simple Component Lab</h1>
+    <button id="aboutBtn">About this page</button>
+    <div id="about" class="about">
+      <p>Two small components:</p>
+      <ul>
+        <li><b>Carousel</b>: images array, next/prev, auto-play, arrow keys. Uses jQuery <code>fadeIn()</code> on slide change.</li>
+        <li><b>Stopwatch</b>: start/stop/reset, laps array, keyboard: S/L/R. Uses <code>setInterval()</code>.</li>
+      </ul>
+    </div>
+
+    <!-- ====== CAROUSEL ====== -->
+    <section class="card">
+      <h2>Gallery Carousel</h2>
+      <div class="stage">
+        <img id="slideImg" src="" alt="" />
+      </div>
+      <div id="slideCaption" class="caption" aria-live="polite"></div>
+      <div class="row">
+        <button id="prevBtn">⟨ Prev</button>
+        <button id="playBtn" class="accent">▶ Play</button>
+        <button id="nextBtn">Next ⟩</button>
+      </div>
+      <div id="dots" class="dots"></div>
+    </section>
+
+    <!-- ====== STOPWATCH ====== -->
+    <section class="card">
+      <h2>Stopwatch & Laps</h2>
+      <div class="time" id="time" aria-live="polite">00:00.0</div>
+      <div class="row">
+        <button id="startStop" class="accent">Start</button>
+        <button id="lapBtn" disabled>Lap</button>
+        <button id="resetBtn" disabled>Reset</button>
+      </div>
+      <p class="hint">Keys: <b>S</b> start/stop, <b>L</b> lap, <b>R</b> reset</p>
+      <ol id="lapsList"></ol>
+    </section>
+  </div>
+
+  <!-- App JS -->
+  <script src="script.js"></script>
+</body>
+</html>

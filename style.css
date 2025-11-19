@@ -1,0 +1,29 @@
+/* Base */
+body{font-family:system-ui,Arial,sans-serif;margin:0;background:#f7f7fb;color:#222}
+.wrap{max-width:800px;margin:auto;padding:16px}
+h1,h2{margin:.2em 0}
+
+/* Cards & layout */
+.card{background:#fff;border:1px solid #e6e8f0;border-radius:10px;padding:12px 14px;margin:12px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Buttons */
+button{border:1px solid #d7d9e0;background:#fff;border-radius:8px;padding:.5rem .8rem;font-weight:600;cursor:pointer}
+button:focus{outline:2px solid #1976d2;outline-offset:2px}
+.accent{background:#1976d2;color:#fff;border-color:#1976d2}
+
+/* Carousel */
+.stage{border:1px solid #e6e8f0;border-radius:10px;overflow:hidden}
+.stage img{display:block;width:100%;max-height:360px;object-fit:cover}
+.caption{color:#666;padding:.4rem .6rem}
+.dots{display:flex;gap:6px;margin-top:6px}
+.dot{width:10px;height:10px;border-radius:999px;background:#cfd2dc;border:0}
+.dot.active{background:#1976d2}
+
+/* Stopwatch */
+.time{font-variant-numeric:tabular-nums;font-size:2rem;margin:.2rem 0}
+ol{margin:.2rem 0 .2rem 1.2rem}
+.hint{color:#666}
+
+/* About panel */
+.about{display:none;color:#444;border-left:3px solid #1976d2;padding:.5rem .75rem;background:#fff}
